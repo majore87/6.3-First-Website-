@@ -91,7 +91,8 @@ header {
         display: inline-block; }
       header nav ul li a:hover {
         background: #ccc;
-        color: #000; }
+        color: #000;
+        transition: 0.4s; }
 
 /* HERO STYLE */
 .hero {
@@ -146,9 +147,11 @@ header {
       color: #808080;
       text-align: center; }
   .benefit .row .element:hover h1 {
-    color: #00C7E8; }
+    color: #00C7E8;
+    transition: 0.4s; }
   .benefit .row .element:hover .icon-btn {
-    background-color: #00C7E8; }
+    background-color: #00C7E8;
+    transition: 0.4s; }
 
 /* FEATURED WORKS */
 .works .row {
@@ -176,7 +179,8 @@ header {
     text-align: center;
     display: block;
     transition: 0.5s;
-    line-height: 260px; }
+    line-height: 260px;
+    cursor: pointer; }
   .gallery .layer:hover {
     background-color: rgba(0, 0, 0, 0.5); }
   .gallery .layer i.fa {
@@ -192,16 +196,16 @@ header {
 
 /* TEAM STYLES */
 .item-1 {
-  background-image: url("http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqAVktNek5kVDBfTzQ"); }
+  background-image: url("../images/ceo.jpeg"); }
 
 .item-2 {
-  background-image: url("http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqANGphbTIyem1FY3M"); }
+  background-image: url("../images/back_end.jpg"); }
 
 .item-3 {
-  background-image: url("http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqAekkxcEczUm95Y28"); }
+  background-image: url("../images/front_end.jpg"); }
 
 .item-4 {
-  background-image: url("http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqASllOZllCMV9lNDg"); }
+  background-image: url("../images/sales.jpeg"); }
 
 .team [class*="col-"] {
   display: inline-block; }
@@ -216,7 +220,9 @@ header {
     border-radius: 50%;
     background-position: center;
     background-size: cover;
-    position: relative; }
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); }
   .team .profession {
     position: absolute;
     height: 100%;
@@ -300,12 +306,12 @@ header {
       text-align: center; }
       .contact .about .row .title .icon-btn {
         border-radius: 50%;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         border: none;
         margin: 10px 10px;
         cursor: pointer;
-        font-size: 40px; }
+        font-size: 30px; }
         .contact .about .row .title .icon-btn:hover {
           color: #FFF;
           transform: scale(1.1);

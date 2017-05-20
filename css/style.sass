@@ -95,6 +95,7 @@ header
 			a:hover
 				background: #ccc
 				color: #000
+				transition: .4s
 
 /* HERO STYLE */
 
@@ -155,8 +156,10 @@ header
 			text-align: center
 	.element:hover h1
 		color: $blue_hover
+		transition: .4s
 	.element:hover .icon-btn
 		background-color: $blue_hover
+		transition: .4s
 
 /* FEATURED WORKS */
 
@@ -188,6 +191,7 @@ header
 		display: block
 		transition: 0.5s
 		line-height: 260px
+		cursor: pointer
 	.layer:hover
 		background-color: rgba(0, 0, 0, 0.5)
 	.layer i.fa
@@ -203,13 +207,13 @@ header
 /* TEAM STYLES */
 
 .item-1
-	background-image: url("http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqAVktNek5kVDBfTzQ")
+	background-image: url("../images/ceo.jpeg")
 .item-2
-	background-image: url("http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqANGphbTIyem1FY3M")
+	background-image: url("../images/back_end.jpg")
 .item-3
-	background-image: url("http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqAekkxcEczUm95Y28")
+	background-image: url("../images/front_end.jpg")
 .item-4
-	background-image: url("http://drive.google.com/uc?export=view&id=0B-wKzYzvKKqASllOZllCMV9lNDg")
+	background-image: url("../images/sales.jpeg")
 
 .team [class*="col-"]
 	display: inline-block
@@ -225,6 +229,8 @@ header
 		background-position: center
 		background-size: cover
 		position: relative
+		cursor: pointer
+		box-shadow: 0 0 10px rgba(0, 0, 0, .8)
 	.profession
 		position: absolute
 		height: 100%
@@ -316,12 +322,12 @@ header
 			text-align: center
 			.title .icon-btn
 				border-radius: 50%
-				width: 80px
-				height: 80px
+				width: 60px
+				height: 60px
 				border: none
 				margin: 10px 10px
 				cursor: pointer
-				font-size: 40px
+				font-size: 30px
 				&:hover
 					color: #FFF
 					transform: scale(1.1)
