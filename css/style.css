@@ -296,6 +296,40 @@ header {
       color: #FFF;
       text-align: center;
       text-transform: uppercase; }
+    .contact .about .row {
+      text-align: center; }
+      .contact .about .row .title .icon-btn {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        border: none;
+        margin: 10px 10px;
+        cursor: pointer;
+        font-size: 40px; }
+        .contact .about .row .title .icon-btn:hover {
+          color: #FFF;
+          transform: scale(1.1);
+          transition: 0.4s; }
+      .contact .about .row .twitter {
+        color: #4099FF; }
+        .contact .about .row .twitter:hover {
+          background-color: #4099FF; }
+      .contact .about .row .facebook {
+        color: #3B5998; }
+        .contact .about .row .facebook:hover {
+          background-color: #3B5998; }
+      .contact .about .row .google-plus {
+        color: #DB5A3C; }
+        .contact .about .row .google-plus:hover {
+          background-color: #DB5A3C; }
+      .contact .about .row .instagram {
+        color: #5C3D2E; }
+        .contact .about .row .instagram:hover {
+          background-color: #5C3D2E; }
+      .contact .about .row .github {
+        color: #4183C4; }
+        .contact .about .row .github:hover {
+          background-color: #4183C4; }
     .contact .about .address-type p {
       font-weight: bold;
       text-transform: uppercase; }
