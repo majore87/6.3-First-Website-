@@ -272,9 +272,10 @@ header
 	position: relative
 	height: 500px
 	.tablet-picture
-		box-sizing: border-box
 		position: absolute
 		bottom: 0
+		img
+			vertical-align: bottom
 	.awesome-title
 		margin-top: 30px
 		margin-left: 50%
@@ -406,6 +407,9 @@ footer
 				font-size: 30px
 				color: $font_white
 				margin-right: 15px
+				cursor: pointer
+				.fa
+					vertical-align: middle
 			#menu-button:not(:checked) ~ul
 				display: none
 			#menu-button:checked ~ul

@@ -263,9 +263,10 @@ header {
   position: relative;
   height: 500px; }
   .tablet .tablet-picture {
-    box-sizing: border-box;
     position: absolute;
     bottom: 0; }
+    .tablet .tablet-picture img {
+      vertical-align: bottom; }
   .tablet .awesome-title {
     margin-top: 30px;
     margin-left: 50%; }
@@ -397,7 +398,10 @@ footer {
       float: right;
       font-size: 30px;
       color: #FFF;
-      margin-right: 15px; }
+      margin-right: 15px;
+      cursor: pointer; }
+      header nav label .fa {
+        vertical-align: middle; }
     header nav #menu-button:not(:checked) ~ ul {
       display: none; }
     header nav #menu-button:checked ~ ul {
