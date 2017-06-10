@@ -1,5 +1,7 @@
 /* SASS Variables */
+/*------------------------------ */
 /* GENERAL STYLE */
+/*------------------------------ */
 * {
   box-sizing: border-box; }
 
@@ -15,7 +17,12 @@ body {
   width: 100%;
   float: left; }
 
+button {
+  outline: none; }
+
+/*------------------------------ */
 /* COLUMN OFFSET */
+/*------------------------------ */
 .col-offset-0 {
   margin-left: 0%; }
 
@@ -52,14 +59,18 @@ body {
 .col-offset-11 {
   margin-left: 91.66%; }
 
+/*------------------------------ */
 /* CLEARFIX */
+/*------------------------------ */
 .row:before,
 .row:after {
   content: " ";
   display: table;
   clear: both; }
 
+/*------------------------------ */
 /* LOGO IMAGE STYLE */
+/*------------------------------ */
 .menu {
   margin: 0 auto; }
 
@@ -69,7 +80,9 @@ header > nav img {
   right: 100px;
   max-width: 100%; }
 
+/*------------------------------ */
 /* NAVIGATION, LINKS */
+/*------------------------------ */
 header {
   background-color: #313332;
   height: 50px; }
@@ -94,14 +107,18 @@ header {
         color: #000;
         transition: 0.4s; }
 
+/*------------------------------ */
 /* HERO STYLE */
+/*------------------------------ */
 .hero {
   position: relative; }
   .hero img {
     height: calc(100vh - 50px);
     width: 100%; }
 
+/*------------------------------ */
 /* TEXT ON HERO STYLE */
+/*------------------------------ */
 .slogan {
   background-color: rgba(40, 42, 41, 0.63);
   color: #FFF;
@@ -123,7 +140,9 @@ header {
     font-size: 30px;
     font-weight: bold; }
 
+/*------------------------------ */
 /* BENEFITS SECTION STYLE */
+/*------------------------------ */
 .benefit .row {
   width: 100%;
   max-width: 100%;
@@ -133,6 +152,7 @@ header {
     font-size: 125px;
     width: 180px;
     height: 200px;
+    max-width: 100%;
     border: none;
     border-radius: 20px;
     color: #FFF;
@@ -153,7 +173,9 @@ header {
     background-color: #00C7E8;
     transition: 0.4s; }
 
+/*------------------------------ */
 /* FEATURED WORKS */
+/*------------------------------ */
 .works .row {
   width: 100%;
   margin: 50px auto;
@@ -165,7 +187,9 @@ header {
   color: #808080;
   font-size: 30px; }
 
+/*------------------------------ */
 /* GALLERY STYLE */
+/*------------------------------ */
 .gallery {
   max-width: 100%;
   position: relative; }
@@ -194,7 +218,9 @@ header {
 .layer:hover i.fa {
   visibility: visible; }
 
+/*------------------------------ */
 /* TEAM STYLES */
+/*------------------------------ */
 .item-1 {
   background-image: url("../images/ceo.jpeg"); }
 
@@ -251,29 +277,40 @@ header {
     font-weight: bold;
     font-size: 25px; }
 
+/*------------------------------ */
 /* Tablet section */
+/*------------------------------ */
+.tablet-container {
+  max-width: 100%;
+  background-color: #828483; }
+
 .tablet-awesome-title, .tablet .awesome-title h1, .tablet .awesome-title p {
   color: #FFF;
   font-size: 30px;
   text-align: center; }
 
 .tablet {
-  background-color: #828483;
-  max-width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   position: relative;
   height: 500px; }
   .tablet .tablet-picture {
     position: absolute;
     bottom: 0; }
     .tablet .tablet-picture img {
-      vertical-align: bottom; }
+      vertical-align: bottom;
+      max-width: 100%; }
   .tablet .awesome-title {
-    margin-top: 30px;
+    position: absolute;
+    top: 50%;
+    margin-top: -163px;
     margin-left: 50%; }
     .tablet .awesome-title h1 {
       text-transform: uppercase; }
 
+/*------------------------------ */
 /* Numbers DATA Container */
+/*------------------------------ */
 .numbers [class*="col-"] {
   text-align: center; }
 .numbers .data h1 {
@@ -286,7 +323,9 @@ header {
   font-size: 25px;
   text-transform: uppercase; }
 
+/*------------------------------ */
 /* ABOUT STYLES */
+/*------------------------------ */
 .about [class*="col-"] p {
   color: #FFF;
   text-align: center;
@@ -299,6 +338,9 @@ header {
     max-width: 100%; }
   .contact .about {
     margin-bottom: 0; }
+    .contact .about p {
+      margin-left: 20px;
+      margin-right: 20px; }
     .contact .about .title h1 {
       color: #FFF;
       text-align: center;
@@ -343,7 +385,9 @@ header {
     .contact .about .address-text p {
       text-align: left; }
 
+/*------------------------------ */
 /* FOOTER STYLE */
+/*------------------------------ */
 footer {
   width: 100%;
   height: 100%;
@@ -353,8 +397,14 @@ footer {
   padding: 30px;
   box-sizing: border-box; }
 
+/*------------------------------ */
+/*------------------------------ */
+/* Responsive design */
+/*------------------------------ */
+/*------------------------------ */
+/* For smartphones: */
+/*------------------------------ */
 @media (max-width: 767px) {
-  /* For tablets: */
   .col-s-1 {
     width: 8.33%; }
 
@@ -405,7 +455,8 @@ footer {
     header nav #menu-button:not(:checked) ~ ul {
       display: none; }
     header nav #menu-button:checked ~ ul {
-      display: block; }
+      display: block;
+      max-width: 100%; }
     header nav input {
       display: none; }
     header nav img {
@@ -441,7 +492,12 @@ footer {
   .tablet {
     height: auto; }
     .tablet .awesome-title {
-      margin-left: 0; }
+      margin-left: 0;
+      margin-top: 0;
+      position: relative; }
+      .tablet .awesome-title p {
+        margin-left: 20px;
+        margin-right: 20px; }
     .tablet .tablet-picture {
       position: static;
       text-align: center; }
@@ -450,8 +506,9 @@ footer {
 
   .contact .about .address-text p {
     text-align: center; } }
+/* For tablets: */
+/*------------------------------ */
 @media (min-width: 768px) and (max-width: 1199px) {
-  /* For desktop: */
   .col-m-1 {
     width: 8.33%; }
 
@@ -488,6 +545,42 @@ footer {
   .col-m-12 {
     width: 100%; }
 
+  .col-offset-m-0 {
+    margin-left: 0%; }
+
+  .col-offset-m-1 {
+    margin-left: 8.33%; }
+
+  .col-offset-m-2 {
+    margin-left: 16.66%; }
+
+  .col-offset-m-3 {
+    margin-left: 25%; }
+
+  .col-offset-m-4 {
+    margin-left: 33.33%; }
+
+  .col-offset-m-5 {
+    margin-left: 41.66%; }
+
+  .col-offset-m-6 {
+    margin-left: 50%; }
+
+  .col-offset-m-7 {
+    margin-left: 58.33%; }
+
+  .col-offset-m-8 {
+    margin-left: 66.66%; }
+
+  .col-offset-m-9 {
+    margin-left: 75%; }
+
+  .col-offset-m-10 {
+    margin-left: 83.33%; }
+
+  .col-offset-m-11 {
+    margin-left: 91.66%; }
+
   header {
     height: auto; }
     header img {
@@ -506,17 +599,23 @@ footer {
   .tablet {
     height: auto; }
     .tablet .awesome-title {
-      margin-left: 0; }
+      margin-left: 0;
+      position: relative;
+      margin-top: 0px; }
+      .tablet .awesome-title p {
+        margin-left: 20px;
+        margin-right: 20px; }
     .tablet .tablet-picture {
       position: static;
       text-align: center; }
       .tablet .tablet-picture img {
-        box-shadow: 0px 19px 34px -11px #000000; }
-
-  .contact .about .address-text p {
-    text-align: center; } }
+        box-shadow: 0px 19px 34px -11px #000000;
+        margin-bottom: 20px; }
+    .tablet .about .address-text p {
+      text-align: center; } }
+/* For desktop: */
+/*------------------------------ */
 @media (min-width: 1200px) {
-  /* For desktop: */
   .col-l-1 {
     width: 8.33%; }
 
