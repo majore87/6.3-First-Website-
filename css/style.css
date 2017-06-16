@@ -449,9 +449,8 @@ footer {
       font-size: 30px;
       color: #FFF;
       margin-right: 15px;
-      cursor: pointer; }
-      header nav label .fa {
-        vertical-align: middle; }
+      cursor: pointer;
+      line-height: 50px; }
     header nav #menu-button:not(:checked) ~ ul {
       display: none; }
     header nav #menu-button:checked ~ ul {
