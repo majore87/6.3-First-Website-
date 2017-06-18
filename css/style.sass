@@ -9,19 +9,15 @@ $fonts: 'Open Sans', sans-serif
 /*------------------------------*/
 *
 	box-sizing: border-box
-
 body
 	margin: 0
 	font-family: $fonts
-
 .container
 	max-width: 1200px
 	margin: 200px auto
-
 [class*="col-"]
 	width: 100%
 	float: left
-
 button
 	outline: none
 
@@ -70,10 +66,8 @@ button
 
 .menu
 	margin: 0 auto
-
 header > nav img
 	height: 50px
-	margin: right
 	right: 100px
 	max-width: 100%
 
@@ -101,10 +95,10 @@ header
 				text-decoration: none
 				color: $font_white
 				display: inline-block
-			a:hover
-				background: #ccc
-				color: #000
-				transition: .4s
+		li:hover a
+			background: #ccc
+			color: #000
+			transition: 0.4s
 
 /*------------------------------*/
 /* HERO STYLE */
@@ -155,8 +149,8 @@ header
 		width: 180px
 		height: 200px
 		max-width: 100%
-		border: none
 		border-radius: 20px
+		border: none
 		color: $font_white
 		background-color: $background_color
 		cursor: pointer
@@ -170,10 +164,10 @@ header
 			text-align: center
 	.element:hover h1
 		color: $blue_hover
-		transition: .4s
+		transition: 0.4s
 	.element:hover .icon-btn
 		background-color: $blue_hover
-		transition: .4s
+		transition: 0.4s
 
 /*------------------------------*/
 /* FEATURED WORKS */
@@ -226,6 +220,11 @@ header
 /* TEAM STYLES */
 /*------------------------------*/
 
+@mixin display-flex
+	display: flex
+	justify-content: center
+	align-items: center
+
 .item-1
 	background-image: url("../images/ceo.jpeg")
 .item-2
@@ -237,7 +236,6 @@ header
 
 .team [class*="col-"]
 	display: inline-block
-
 .team
 	width: 80vw
 	text-align: center
@@ -250,7 +248,7 @@ header
 		background-size: cover
 		position: relative
 		cursor: pointer
-		box-shadow: 0 0 10px rgba(0, 0, 0, .8)
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.8)
 	.profession
 		position: absolute
 		height: 100%
@@ -260,14 +258,9 @@ header
 		display: none
 		text-transform: uppercase
 	.person:hover .profession
-		display: block
-		display: flex
-		justify-content: center
-		align-items: center
+		@include display-flex
 		.flex-center
-			display: flex
-			justify-content: center
-			align-items: center
+			@include display-flex
 			p
 				display: flex
 				font-weight: bold
@@ -338,7 +331,6 @@ header
 	color: $font_white
 	text-align: center
 	font-size: 16px
-
 .contact
 	background-color: $background_color
 	width: 100%
@@ -415,6 +407,7 @@ footer
 
 /* For smartphones: */
 /*------------------------------*/
+
 @media (max-width: 767px)
 	.col-s-1
 		width: 8.33%
@@ -591,6 +584,7 @@ footer
 
 /* For desktop: */
 /*------------------------------*/
+
 @media (min-width: 1200px)
 	.col-l-1
 		width: 8.33%

@@ -76,7 +76,6 @@ button {
 
 header > nav img {
   height: 50px;
-  margin: right;
   right: 100px;
   max-width: 100%; }
 
@@ -102,10 +101,10 @@ header {
         text-decoration: none;
         color: #FFF;
         display: inline-block; }
-      header nav ul li a:hover {
-        background: #ccc;
-        color: #000;
-        transition: 0.4s; }
+    header nav ul li:hover a {
+      background: #ccc;
+      color: #000;
+      transition: 0.4s; }
 
 /*------------------------------ */
 /* HERO STYLE */
@@ -153,8 +152,8 @@ header {
     width: 180px;
     height: 200px;
     max-width: 100%;
-    border: none;
     border-radius: 20px;
+    border: none;
     color: #FFF;
     background-color: #313332;
     cursor: pointer; }
@@ -258,7 +257,6 @@ header {
     display: none;
     text-transform: uppercase; }
   .team .person:hover .profession {
-    display: block;
     display: flex;
     justify-content: center;
     align-items: center; }
